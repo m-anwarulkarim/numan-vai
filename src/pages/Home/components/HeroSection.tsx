@@ -8,7 +8,7 @@ const HeroSection = () => {
       style={{
         backgroundImage: "url('/images/banner.webp')",
         backgroundSize: "contain",
-        backgroundColor: "#000",
+        // backgroundColor: "#000",
       }}
     >
       {/* Overlay (optional, readability বাড়াতে) */}
