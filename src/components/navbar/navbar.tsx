@@ -1,6 +1,7 @@
 // import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
+import { NavigationSheet } from "./navigation-sheet";
 // import { NavigationSheet } from "./navigation-sheet";
 
 const NavbarPage = () => {
@@ -12,6 +13,9 @@ const NavbarPage = () => {
 
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
+          <div className="md:hidden">
+            <NavigationSheet />
+          </div>
         </div>
       </nav>
     </div>

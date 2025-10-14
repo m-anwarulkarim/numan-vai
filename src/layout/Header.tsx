@@ -2,7 +2,7 @@ import NavbarPage from "@/components/navbar/navbar";
 
 const Header = () => {
   return (
-    <div>
+    <div className="z-50">
       <NavbarPage />
     </div>
   );
