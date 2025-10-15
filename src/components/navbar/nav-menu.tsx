@@ -24,29 +24,10 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
           <ul className="grid w-[200px] gap-4">
             <li>
               <NavigationMenuLink asChild>
-                <Link to="/">Components</Link>
+                <Link to="/">প্রবন্ধ</Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <Link to="/">Documentation</Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link to="/">Blocks</Link>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-        <NavigationMenuTrigger>স্কুলিং</NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid w-[200px] gap-4">
-            <li>
-              <NavigationMenuLink asChild>
-                <Link to="/">Components</Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link to="/">Documentation</Link>
+                <Link to="/">রচনা</Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link to="/">Blocks</Link>
@@ -55,25 +36,46 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
           </ul>
         </NavigationMenuContent>
       </NavigationMenuItem>
-
-      <NavigationMenuItem>
-        <NavigationMenuTrigger>প্রকাশনা</NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid w-[200px] gap-4">
-            <li>
-              <NavigationMenuLink asChild>
-                <Link to="/">Components</Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link to="/">Documentation</Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link to="/">Blocks</Link>
-              </NavigationMenuLink>
-            </li>
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>স্কুলিং</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[200px] gap-4">
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link to="/">স্কুলিং</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link to="/">স্কুলিং</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link to="/">স্কুলিং</Link>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>প্রকাশনা</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[200px] gap-4">
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link to="/">প্রকাশনা</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link to="/">প্রকাশনা</Link>
+                </NavigationMenuLink>
+                <NavigationMenuLink asChild>
+                  <Link to="/">প্রকাশনা</Link>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
 
       <NavigationMenuItem>
         <NavigationMenuLink asChild>

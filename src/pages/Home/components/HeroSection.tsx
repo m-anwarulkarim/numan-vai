@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-center bg-no-repeat bg-contain min-h-screen text-white flex items-start justify-center pt-20 sm:pt-24 md:pt-32 lg:pt-40 pb-5 overflow-hidden"
+      className="relative w-full bg-center bg-no-repeat bg-cover min-h-screen text-white flex items-start justify-center pt-20 sm:pt-24 md:pt-32 lg:pt-40 pb-5 overflow-hidden px-0 mx-0"
       style={{
         backgroundImage: "url('/images/banner.webp')",
         backgroundSize: "contain",
@@ -15,7 +15,7 @@ const HeroSection = () => {
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 md:px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center  md:px-6">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
